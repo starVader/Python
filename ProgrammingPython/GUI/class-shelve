@@ -1,0 +1,1 @@
+{"bob": {"pay": 30000, "name": "Bob smith", "job": "dev", "age": 42}, "tom": {"pay": 0, "name": "Tom", "job": "None", "age": 50}, "sue": {"pay": 40000, "name": "Sue jones", "job": "hdw", "age": 45}}

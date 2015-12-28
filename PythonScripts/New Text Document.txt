@@ -1,0 +1,6 @@
+import numpy as np
+def MatrixProduct(A, B): 
+	mx = np.matrix(A)
+	my = np.matrix(B)
+	return mx*my
+			

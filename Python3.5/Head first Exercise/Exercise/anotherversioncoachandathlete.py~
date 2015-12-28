@@ -1,0 +1,50 @@
+#!/usr/bin/env python
+james = []
+julie = []
+mikey = []
+sarah = []
+njames = []
+njulie = []
+nmikey = []
+nsarah = []
+
+
+
+def sanitize(timestring):
+    if '-' in timestring:
+       splitter = '-' 
+    elif ':' in timestring:
+        splitter = ':'
+    else:
+        return(timestring)
+    (mins,secs) = timestring.split(splitter)
+    return(mins + '.' + secs)
+
+        
+
+with open('james.txt','r') as jam:
+    data = jam.readline()
+    james = data.strip().split(',')
+with open('julie.txt','r') as jul:
+    data = jul.readline()
+    julie = data.strip().split(',')
+with open('mikey.txt','r') as mik:
+    data = mik.readline()
+    mikey = data.strip().split(',')
+with open('sarah.txt','r') as sar:
+    data = sar.readline()
+    sarah = data.strip().split(',')
+james= sorted([sanitize(t) for t in james])
+mikey= sorted([sanitize(t) for t in mikey])
+sarah= sorted([sanitize(t) for t in sarah])
+julie= sorted([sanitize(t) for t in julie])
+
+myset ={}
+myset =map(james,set())
+print (myset)
+
+
+
+
+    
+
