@@ -3,10 +3,10 @@
 thickness = int(raw_input()) #This must be an odd number
 c = 'H'
 
-#Top Cone
-for i in range(thickness):
-    print (c*i).rjust(thickness-1)+c+(c*i).ljust(thickness-1)
-
+#Top Cone  Prints Thickness should be an odd number                                                                                  H
+for i in range(thickness):                                                     #                   HHH
+    print (c*i).rjust(thickness-1)+c+(c*i).ljust(thickness-1)                  #                  HHHHH              
+                                                                               #                 HHHHHHH
 #Top Pillars
 for i in range(thickness+1):
     print (c*thickness).center(thickness*2)+(c*thickness).center(thickness*6)
