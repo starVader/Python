@@ -3,7 +3,7 @@
 thickness = int(raw_input()) #This must be an odd number
 c = 'H'
 
-#Top Cone  Prints Thickness should be an odd number                                                                                  H
+#Top Cone  Prints Thickness should be an odd number                                                 H                                 H
 for i in range(thickness):                                                     #                   HHH
     print (c*i).rjust(thickness-1)+c+(c*i).ljust(thickness-1)                  #                  HHHHH              
                                                                                #                 HHHHHHH
